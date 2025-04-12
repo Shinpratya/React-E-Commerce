@@ -12,18 +12,25 @@ import Login from "./pages/Login.tsx";
 import Register from "./pages/Register.tsx";
 import Cart from "./pages/Cart.tsx";
 import DetailProduct from "./pages/DetailProduct.tsx";
+import PageNotFound from "./pages/PageNotFound.tsx";
+import Search from "./pages/Search.tsx";
+import BaseLayout from "./layouts/BaseLayout.tsx";
 
 export const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-    // errorElement: <PageNotFound />,
+    element: <BaseLayout />,
+    errorElement: <PageNotFound />,
     children: [
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "search/:id",
+        element: <Search />,
       },
       {
         path: "login",

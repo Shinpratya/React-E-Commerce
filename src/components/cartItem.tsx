@@ -13,7 +13,7 @@ const CartItem = ({ product }: CartItemProps) => {
   return (
     <Card
       hoverable
-      style={{ width: 250, border: "none" }}
+      style={{ width: 250, border: "none", marginTop: "20px" }}
       cover={
         <img
           className={css`
@@ -28,7 +28,6 @@ const CartItem = ({ product }: CartItemProps) => {
       onClick={() => navigate(`/detail/${product?.id}`)}
     >
       <Typography.Paragraph
-        onClick={() => navigate(`/detail/${product?.id}`)}
         style={{ fontSize: "20px" }}
         ellipsis={{ rows: 1 }}
         className={css`

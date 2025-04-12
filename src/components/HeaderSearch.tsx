@@ -1,14 +1,14 @@
 import { css } from "@emotion/css";
 import { Select, Typography } from "antd";
 
-const HeaderHomepage = () => {
+const HeaderSearch = () => {
   return (
     <div
       className={css`
         display: flex;
         justify-content: space-between;
         align-item: center;
-        margin: 10px 20px;
+        margin: 0 20px;
       `}
     >
       <Typography.Title level={4}>Product</Typography.Title>
@@ -47,4 +47,4 @@ const HeaderHomepage = () => {
   );
 };
 
-export default HeaderHomepage;
+export default HeaderSearch;

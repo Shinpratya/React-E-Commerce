@@ -5,7 +5,7 @@ import { productSelector, getProducts, useAppDispatch } from "../stores";
 import { useEffect } from "react";
 import { Skeleton } from "antd";
 
-const Home = () => {
+const Search = () => {
   const { data, loading } = useSelector(productSelector);
   const dispatch = useAppDispatch();
 
@@ -36,4 +36,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Search;
