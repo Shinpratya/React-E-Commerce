@@ -13,16 +13,17 @@ const Nav = () => {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          width: 100% !impotant;
+          width: 100% !important ;
           height: 4rem;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           padding: 0 3rem;
-          z-index: 99!impotant;
+          z-index: 99 !important ;
         `}
       >
         <h2
           onClick={() => navigate("/")}
           className={css`
+            color: black;
             :hover {
               color: rgb(109, 111, 243);
               cursor: pointer;
